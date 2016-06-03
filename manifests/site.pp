@@ -61,8 +61,7 @@ node default {
 
   #include syncthing
 
-  include vagrant_lxc::lxc
-  vagrant_lxc::vagrant {'install_vagrant_lxc_and_boxes':
+  vagrant_lxc {'install_lxc_and_vagrant_and_vagrant_boxes':
     user => 'user01',
   }
 }
